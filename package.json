@@ -1,0 +1,22 @@
+{
+  "name": "mediamath",
+  "version": "1.0.0",
+  "description": "Code challenges from Media Math",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --runInBand --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ENaranjo95/mediaMath_CodeChallenge.git"
+  },
+  "author": "Edwin Naranjo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ENaranjo95/mediaMath_CodeChallenge/issues"
+  },
+  "homepage": "https://github.com/ENaranjo95/mediaMath_CodeChallenge#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
