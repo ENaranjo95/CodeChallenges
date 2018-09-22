@@ -41,10 +41,7 @@ function highestPaid(data){
   });
 
   let topEarner = highPaid.find( function(person){
-    let employee = null;
-    if(employee === null) employee = person;
-    if(employee.salary < person.salary) employee = person;
-    return employee;
+    return Math.max(person.salary)
   });
 
   return topEarner;
