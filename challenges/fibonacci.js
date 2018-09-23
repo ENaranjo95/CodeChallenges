@@ -3,10 +3,8 @@
 // Ex. index = 6 should return the number 8
 // Fibonacci Sequence [0, 1, 1, 2, 3, 5, 8, 13, ...]
 
-function fibonaaci(index){
-  if(index === 0) return 0
-  if(index === 1) return 1
-  return fibonaaci(index - 2) + fibonaaci(index - 1)
+const fibonaaci = (index) => {
+  // Code here
 }
 
 module.exports = fibonaaci

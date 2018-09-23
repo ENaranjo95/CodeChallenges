@@ -1,18 +1,18 @@
 const highestPaid = require('../../challenges/highestPaid')
 
 test('Expect the binary rc to equal {"id": 124, "name": "Leon Noel", "salary": 90000}',
-() => {
+  () => {
   expect(highestPaid(rc))
   .toEqual({"id": 124, "name": "Leon Noel", "salary": 90000});
 });
 
 test('Expect the binary media to equal {"id": 124, "name": "Knight Fu", "salary": 120000}',
-() => {
+  () => {
   expect(highestPaid(media))
   .toEqual({"id": 124, "name": "Knight Fu", "salary": 120000});
 });
 test('Expect the binary tree solo to equal {"id": 129, "name": "Edwin Naranjo", "salary": 80000, "directReport": []}',
-() => {
+  () => {
   expect(highestPaid(solo))
   .toEqual({"id": 129, "name": "Edwin Naranjo", "salary": 80000, "directReport": []});
 });

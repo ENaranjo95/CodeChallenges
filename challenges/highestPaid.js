@@ -33,18 +33,8 @@
 //   ]
 // }
 
-function highestPaid(data){
-  if(data.directReport.length === 0) return data
-
-  let highPaid = data.directReport.map( function(person){
-    return {"id": person.id, "name": person.name, "salary": person.salary}
-  });
-
-  let topEarner = highPaid.find( function(person){
-    return Math.max(person.salary)
-  });
-
-  return topEarner;
+const highestPaid = (data) => {
+  // Code here
 }
 
 module.exports = highestPaid
