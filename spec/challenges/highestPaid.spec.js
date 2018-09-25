@@ -3,14 +3,15 @@ const highestPaid = require('../../challenges/highestPaid')
 test('Expect the binary rc to equal {"id": 124, "name": "Leon Noel", "salary": 90000}',
 () => {
   expect(highestPaid(rc))
-  .toEqual({"id": 124, "name": "Leon Noel", "salary": 90000});
+  .toEqual({"id": 124, "name": "Leon Noel", "salary": 90000, "directReport": []});
 });
 
 test('Expect the binary media to equal {"id": 124, "name": "Knight Fu", "salary": 120000}',
 () => {
   expect(highestPaid(media))
-  .toEqual({"id": 124, "name": "Knight Fu", "salary": 120000});
+  .toEqual({"id": 123, "name": "Mr. CEO", "salary": 130000, "directReport": []});
 });
+
 test('Expect the binary tree solo to equal {"id": 129, "name": "Edwin Naranjo", "salary": 80000, "directReport": []}',
 () => {
   expect(highestPaid(solo))
@@ -55,7 +56,7 @@ const rc = {
 const media = {
   "id": 123,
   "name": "Mr. CEO",
-  "salary": 100000,
+  "salary": 130000,
   "directReport": [
     {
       "id": 124,

@@ -33,18 +33,25 @@
 //   ]
 // }
 
-function highestPaid(data){
-  if(data.directReport.length === 0) return data
+let highestPaid = (data, level, max) => {
 
-  let highPaid = data.directReport.map( function(person){
-    return {"id": person.id, "name": person.name, "salary": person.salary}
-  });
+  if(max === undefined){
+    max = data
+  }else{
+    if(max.salary < data.salary){
+      max = data
+    }
+  }
+  //console.log(`${'*'.repeat(level)} ${data.name} ${data.salary} ${max.salary}`)
 
-  let topEarner = highPaid.find( function(person){
-    return Math.max(person.salary)
-  });
+  if(data.directReport.length === 0){
+    return max
+  }
+  for(let x = 0; x < data.directReport.length; x++){
+    max = highestPaid(data.directReport[x], level + 1, max)
+  }
 
-  return topEarner;
+  return max
 }
 
 module.exports = highestPaid
