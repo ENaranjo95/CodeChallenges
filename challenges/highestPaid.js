@@ -36,10 +36,10 @@
 let highestPaid = (data, level, max) => {
 
   if(max === undefined){
-    max = data
+    max = {"id": data.id, "name": data.name, "salary": data.salary, "directReport": []}
   }else{
     if(max.salary < data.salary){
-      max = data
+      max = {"id": data.id, "name": data.name, "salary": data.salary, "directReport": []}
     }
   }
   //console.log(`${'*'.repeat(level)} ${data.name} ${data.salary} ${max.salary}`)
