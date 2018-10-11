@@ -21,7 +21,7 @@
   ### Challenges
 
 - [Fibonacci] (challenges/fibonacci.js)
-  - Build the function that takes a integer (represented as the index number of the fibonacci list) and return the value it would be
+  - Build the function that takes a integer (represented as the index number of the fibonacci list) and return the fibonnaci number. (Ex. index number 2, returns fib number 1; index number 5, returns fib number 3)
 
 - [From Twelve] (challenges/fromTwelve.js)
   - Write a function that sorts a list of integers by how far they are to 12,
@@ -29,13 +29,26 @@
   if we have a list of integers 0, 3, 5, 13, 19, then the result after sorting the list is 13, 5, 19, 3, 0.
 
 - [Get Duplicate] (challenges/getDuplicate.js)
-    - Given a list, can you return the word or words duplicated in the list.
+    - Given a list, return the word or words duplicated in a list. (Ex. ['foo', 'bar', 'hello', 'foo', 'hello'], returns ['foo', 'hello'])
 
 - [Highest Paid] (challenges/highestPaid.js)
   - Build a function that takes a Binary Tree data structure and returns the highest earned salary employee among the company
+  Tree structure as followed: {'id': int, 'name': 'string', 'salary': int, 'directReport': [] }
 
 - [Not Divide] (challenges/notDivide.js)
-  - Write an application that find all the integers in a list that do not divide evenly into 3, 5 or 10.
+  - Write a function that finds all the integers in a list that do not divide evenly into 3, 5 or 10 and return a list.
 
 - [Same Tree] (challenges/sameTree.js)
-  - Build a function that takes two parameters (two binary trees data structures) and validate they are twins. If they are twins then return true, else return false
+  - Build a function that takes two parameters (two binary trees data structures) and validate they are identical. If they are identical then return true, else return false.
+  Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
+      *            *
+    /   \        /   \
+   *     *      *     *
+  / \     \    / \     \
+ *   *     *  *   *     *
+ 
+ 
+ 
+  
+  
+  
