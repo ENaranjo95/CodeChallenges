@@ -41,7 +41,8 @@
 - [Same Tree] (challenges/sameTree.js)
   - Build a function that takes two parameters (two binary trees data structures) and validate they are identical. If they are identical then return true, else return false.
   Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
- ```  *            *
+ ``` 
+      *            *
     /   \        /   \
    *     *      *     *
   / \     \    / \     \
