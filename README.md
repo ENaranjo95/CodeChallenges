@@ -14,7 +14,7 @@
   #### Testing
 
   - To test solution on a specific file:
-    - Run `npm test spec/challenges/<nameOfFile>Spec.js`
+    - Run `npm test spec/challenges/<nameOfFile>.spec.js`
   - To test every file:
     - Run `npm test`
 
