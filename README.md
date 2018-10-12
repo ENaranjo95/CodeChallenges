@@ -1,4 +1,4 @@
-# Media Math Code Challenges
+# Code Challenges
 
 ## Technology
 ** Tech Used: ** Jest and Node.JS
